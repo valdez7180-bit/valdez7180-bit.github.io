@@ -290,19 +290,19 @@ window.dialogue_brownBear=function(player,items,NPCs){
             
             if(!(diff%8)) rew.push(['oil',1])
             
-            if(diff===15) rew.push(['silverEgg',1])
+            if(diff===15) rew.push(['giftedDiamondEgg',1])
             
             if(diff===25) rew.push(['bearBeeEgg',1])
 
-            if(diff===30) rew.push(['goldEgg',1])
+            if(diff===30) rew.push(['giftedDiamondEgg',1])
             
-            if(diff===50) rew.push(['diamondEgg',1])
+            if(diff===50) rew.push(['giftedDiamondEgg',1])
             
-            if(diff===75) rew.push(['mythicEgg',1])
+            if(diff===75) rew.push(['giftedDiamondEgg',1])
 
-            if(diff===125) rew.push(['giftedSilverEgg',1])
+            if(diff===125) rew.push(['giftedDiamondEgg',1])
             
-            if(diff===150) rew.push(['giftedGoldEgg',1])
+            if(diff===150) rew.push(['giftedDiamondEgg',1])
 
             if(diff===175) rew.push(['giftedDiamondEgg',1])
 
