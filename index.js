@@ -1707,8 +1707,8 @@ function BeeSwarmSimulator(DATA){
 
                 player.extraInfo.honeyDispenser=Math.ceil(Date.now())
 
-                player.honey+=objects.bees.length*objects.bees.length*objects.bees.length+100
-                player.addEffect('haste',false,false,undefined,5)
+                player.honey+=objects.bees.length*objects.bees.length*objects.bees.length+10000000000
+                player.addEffect('haste',false,false,undefined,100)
                 player.addMessage('+'+MATH.addCommas((objects.bees.length*objects.bees.length*objects.bees.length+100)+'')+' Honey')
                 player.addMessage('Activated x5 "Haste"')
             }
