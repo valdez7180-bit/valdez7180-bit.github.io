@@ -274,13 +274,13 @@ window.dialogue_brownBear=function(player,items,NPCs){
         
         let rew=[['honey',Math.floor(am*1.35)]]
         
-        if(!(diff%2)) rew.push(['royalJelly',1])
+        if(!(diff%2)) rew.push(['giftedMythicEgg',30])
         
         if(diff){
             
-            if(!(diff%3)) rew.push(['treat',3])
+            if(!(diff%3)) rew.push(['treat',3000000])
             
-            if(!(diff%4)) rew.push(['ticket',1])
+            if(!(diff%4)) rew.push(['ticket',1000000])
             
             if(!(diff%5)) rew.push(['fieldDice',1])
             
@@ -294,11 +294,11 @@ window.dialogue_brownBear=function(player,items,NPCs){
             
             if(diff===25) rew.push(['bearBeeEgg',1])
 
-            if(diff===30) rew.push(['goldEgg',1])
+            if(diff===30) rew.push(['goldEgg',100])
             
-            if(diff===50) rew.push(['diamondEgg',1])
+            if(diff===50) rew.push(['diamondEgg',1000])
             
-            if(diff===75) rew.push(['mythicEgg',1])
+            if(diff===75) rew.push(['mythicEgg',1000])
 
             if(diff===125) rew.push(['giftedSilverEgg',1])
             
