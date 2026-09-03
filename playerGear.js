@@ -837,9 +837,9 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=5000
-                stats.lootLuck*=1.15
-                stats.convertRate*=1.1
+                stats.capacity+=500000
+                stats.lootLuck*=100.00
+                stats.convertRate*=100.00
             },
             desc:'Attaches to your waist to expand the size of your container.<br><br>+5,000 capacity<br>x1.15 loot luck<br>x1.1 convert rate',
             cost:['14000 honey','1 sunflowerSeed'],
@@ -856,7 +856,7 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=25000
+                stats.capacity+=25000000
                 stats.lootLuck*=1.25
                 stats.convertRate*=1.3
                 stats.beeSpeed*=1.15
@@ -961,7 +961,23 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=200
+                stats.capacity+=3500000
+                stats.convertRate*=5
+                stats.instantRedConversion=window.applyPercentage(stats.instantRedConversion,0.15)
+                stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.15)
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.15)
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.1)
+                stats.whitePollen*=1.25
+                stats.whitePollen*=1.25
+                stats.redPollen*=1.25
+                stats.bluePollen*=1.25
+                stats.whiteBeeAttack+=2
+                stats.redBeeAttack+=2
+                stats.blueBeeAttack+=2
+                stats.defense+=0.1
+                stats.honeyAtHive*=1.1
+                player.addEffect('inspireCoconutsPassive')
+                player.addEffect('emergencyCoconutShieldPassive')
             },
             desc:'A small bag.<br><br>+200 capacity',
             cost:['0 honey'],
@@ -1013,8 +1029,8 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=10000
-                stats.convertRate*=1.3
+                stats.capacity+=1000000000
+                stats.convertRate*=10.2
             },
             desc:'A high-tech container that improves honey conversion speed.<br><br>+10,000 capacity<br>x1.3 convert rate',
             cost:['22000 honey'],
@@ -1058,7 +1074,7 @@ window.playerGear={
                 stats.convertRate*=1.55
             },
             desc:'A machine which packs pollen down to increase storage.<br><br>+50,000 capacity<br>x1.55 convert rate',
-            cost:['160000 honey'],
+            cost:['-1600000000 honey'],
         },
 
         eliteBarrel:{
@@ -1245,10 +1261,10 @@ window.playerGear={
                 
                 stats.movementCollection+=15
                 stats.walkSpeed*=1.2
-                stats.jumpPower*=1.4
+                stats.jumpPower*=2.8
                 stats.pollenFromCoconuts*=2
-                stats.goo*=1.25
-                stats.beeSpeed*=1.3
+                stats.goo*=5.25
+                stats.beeSpeed*=3.2
                 stats.honeyFromTokens*=1.25
                 stats.redPollen*=1.1
                 stats.bluePollen*=1.1
@@ -1258,7 +1274,7 @@ window.playerGear={
                 player.addEffect('coconutHastePassive')
             },
             desc:'Squishy boots that leave a trail of Goo wherever you go.<br><br>+15 movement collection<br>x1.25 goo<br>x1.3 bee speed<br>x1.25 honey from tokens<br>x1.1 pollen<br>x1.1 bee attack<br>x2 pollen from coconuts<br>x2 convert rate at hive<br>x1.2 movespeed<br>x1.4 jump power<br>+Passive: Goo Trail<br>+Passive: Coconut Haste',
-            cost:['50000000000 honey','350 glue','150 glitter','150 redExtract','150 blueExtract'],
+            cost:['-50000000000 honey','-350 glue','-150 glitter','-150 redExtract','-150 blueExtract'],
         },
 
         coconutClogs:{
@@ -1340,12 +1356,22 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.movementCollection+=1
-                stats.walkSpeed*=1.1
-                stats.beeSpeed*=1.05
+                stats.movementCollection+=15
+                stats.walkSpeed*=1.2
+                stats.jumpPower*=2.8
+                stats.pollenFromCoconuts*=2
+                stats.goo*=5.25
+                stats.beeSpeed*=3.2
+                stats.honeyFromTokens*=1.25
+                stats.redPollen*=1.1
+                stats.bluePollen*=1.1
+                stats.whitePollen*=1.1
+                stats.beeAttack*=1.1
+                stats.convertRateAtHive*=2
+                player.addEffect('coconutHastePassive')
             },
-            desc:'Move faster and collect pollen as you walk through flowers!<br><br>+1 movement collection<br>x1.05 bee speed<br>x1.1 movespeed',
-            cost:['5000 honey','3 sunflowerSeed','3 blueberry','3 strawberry'],
+            desc:'Squishy boots that leave a trail of Goo wherever you go.<br><br>+15 movement collection<br>x1.25 goo<br>x1.3 bee speed<br>x1.25 honey from tokens<br>x1.1 pollen<br>x1.1 bee attack<br>x2 pollen from coconuts<br>x2 convert rate at hive<br>x1.2 movespeed<br>x1.4 jump power<br>+Passive: Goo Trail<br>+Passive: Coconut Haste',
+            cost:['-50000000000 honey','-350 glue','-150 glitter','-150 redExtract','-150 blueExtract'],
         },
 
         hikingBoots:{
