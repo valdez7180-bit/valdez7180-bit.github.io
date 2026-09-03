@@ -12990,8 +12990,8 @@ function BeeSwarmSimulator(DATA){
                             case 'rhinoBeetle':
 
                                 amountOfTokens+=4
-                                dropTable=['blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueExtract','treat','treat','gumdrops','gumdrops']
-                                dropAmountTable={blueberry:[1,1,1,1,1,1,1,1,1,1,1,3,3,5],blueExtract:[1,1,1,1,1,1,1,1,1,3],treat:[1,1,1,1,1,1,1,1,1,3,3,3,5,5,10],gumdrops:[1,1,1,1,1,1,1,3,3,5]}
+                                dropTable=['giftedMythicEgg','giftedMythicEgg','giftedMythicEgg','giftedMythicEgg','giftedMythicEgg','blueberry','blueberry','blueberry','blueberry','blueberry','blueberry','blueExtract','treat','treat','gumdrops','gumdrops']
+                                dropAmountTable={giftedMythicEgg:[1,1,1,1,1,1,1,1,1,1,1,3,3,5],blueExtract:[1,1,1,1,1,1,1,1,1,3],treat:[1,1,1,1,1,1,1,1,1,3,3,3,5,5,10],gumdrops:[1,1,1,1,1,1,1,3,3,5]}
 
                             break
 
