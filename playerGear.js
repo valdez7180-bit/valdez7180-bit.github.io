@@ -745,7 +745,7 @@ window.playerGear={
 
             },
             desc:'The offical mask of a gummy soldier.<br><br>x1.75 goo<br>x2 capacity<br>x1.75 white field capacity<br>x1.5 white pollen<br>x1.35 pollen<br>+25% instant white conversion<br>x1.5 honey from tokens<br>x1.75 convert rate<br>+30% defense<br>x1.2 bee ability rate<br>+Passive: Gummy Morph<br>+Passive: Coin Scatter',
-            cost:['5000000000 honey','150 glue','75 enzymes','75 oil','75 glitter'],
+            cost:['-5000000000 honey','150 glue','75 enzymes','75 oil','75 glitter'],
         },
         
         diamondMask:{
@@ -784,7 +784,7 @@ window.playerGear={
                 player.addEffect('bubbleBombsPassive')
             },
             desc:'Proudly show off your extreme wealth to the world. Shine so brightly that others will complain.<br><br>x3 capacity<br>x1.75 blue field capacity<br>x1.5 blue pollen<br>x1.35 pollen<br>x2 convert rate<br>x2 convert rate at hive<br>x2 bubble pollen<br>+35% defense<br>x1.2 bee ability rate<br>+Passive: Diamond Drain<br>+Passive: Bubble Bombs',
-            cost:['5000000000 honey','250 blueExtract','1 diamondEgg','75 glitter','100 oil'],
+            cost:['-5000000000 honey','-250 blueExtract','-1 diamondEgg','-75 glitter','-100 oil'],
         },
         
         demonMask:{
@@ -837,7 +837,7 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=5000
+                stats.capacity+=5000000000
                 stats.lootLuck*=1.15
                 stats.convertRate*=1.1
             },
