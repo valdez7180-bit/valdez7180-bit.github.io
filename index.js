@@ -1708,7 +1708,7 @@ function BeeSwarmSimulator(DATA){
 
                 player.extraInfo.honeyDispenser=Math.ceil(Date.now())
 
-                items.giftedMythicEgg.amount++
+                items.giftedMythicEgg.amount+=100
                 player.honey+=objects.bees.length*objects.bees.length*objects.bees.length+100
                 player.addEffect('haste',false,false,undefined,5)
                 player.addMessage('+'+MATH.addCommas((objects.bees.length*objects.bees.length*objects.bees.length+100)+'')+' Honey')
