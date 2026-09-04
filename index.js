@@ -1682,9 +1682,13 @@ function BeeSwarmSimulator(DATA){
 
                 items.treat.amount+=objects.bees.length*4+10
                 items.pineapple.amount+=numBees+3
-                items.giftedMythicEgg.amount+=numBees+10
+                items.giftedMythicEgg.amount+=numBees+
+                items.gumdrops.amount+=1000000
+            items.atomicTreat.amount+=100000
+            items.ticket.amount+=100000
                 player.addEffect('haste',false,false,undefined,10)
                 player.honey+=100000000*(numBees+1)
+
                 player.updateInventory()
                 player.addMessage('+'+MATH.addCommas((250*numBees)+'')+' Honey')
                 player.addMessage('+'+MATH.addCommas((objects.bees.length*4+10)+'')+' Treats')
